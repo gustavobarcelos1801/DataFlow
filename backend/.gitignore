@@ -1,0 +1,177 @@
+# ============================================
+# ARQUIVOS SENSÍVEIS - NUNCA COMMITAR
+# ============================================
+
+# Variáveis de ambiente e segredos
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.snk
+*.pubxml
+*.secret
+*.credential
+*.credentials
+secrets.json
+appsettings.*.local.json
+appsettings.Local.json
+appsettings.Development.json
+appsettings.Production.json
+
+# Arquivos de segredos do usuário (.NET)
+*.user
+*.suo
+*.userprefs
+*.DotSettings.user
+
+# ============================================
+# BUILD RESULTS (.NET)
+# ============================================
+
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# ============================================
+# ARQUIVOS GERADOS PELO .NET
+# ============================================
+
+*.dll
+*.exe
+*.pdb
+*.cache
+*.nupkg
+*.snupkg
+*.nuspec
+*.dll.config
+*.exe.config
+*.deps.json
+*.runtimeconfig.json
+*.runtimeconfig.dev.json
+*.generated.cs
+*.csproj.FileListAbsolute.txt
+*.csproj.nuget.*
+project.assets.json
+project.nuget.cache
+*.Up2Date
+*.AssemblyInfo.cs
+*.AssemblyInfoInputs.cache
+*.assets.cache
+*.csproj.AssemblyReference.cache
+*.csproj.CoreCompileInputs.cache
+*.csproj.GeneratedMSBuildEditorConfig.editorconfig
+*.genruntimeconfig.cache
+*.GlobalUsings.g.cs
+*.MvcApplicationPartsAssemblyInfo.cache
+*.MvcApplicationPartsAssemblyInfo.cs
+*.staticwebassets.endpoints.json
+*.staticwebassets.build.json
+*.staticwebassets.build.json.cache
+swae.build.ex.cache
+rjsmcshtml.dswa.cache.json
+rjsmrazor.dswa.cache.json
+rpswa.dswa.cache.json
+.msCoverageSourceRootsMapping_*
+CoverletSourceRootsMapping_*
+
+# ============================================
+# TEST RESULTS
+# ============================================
+
+[Tt]est[Rr]esult*/
+[Tt]est[Rr]esult[s]/
+*.trx
+*.coverage
+*.coveragexml
+coverage/
+coverage.json
+*.opencover.xml
+
+# ============================================
+# IDE / EDITORES
+# ============================================
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vsconfig
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+# JetBrains / Rider
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# ============================================
+# SISTEMA OPERACIONAL
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*.swp
+*~
+
+# ============================================
+# LOGS E ARQUIVOS TEMPORÁRIOS
+# ============================================
+
+logs/
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*~
+*.swp
+*.swo
+
+# ============================================
+# BANCO DE DADOS LOCAL
+# ============================================
+
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.mdf
+*.ldf

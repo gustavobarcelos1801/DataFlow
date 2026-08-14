@@ -1,0 +1,53 @@
+﻿@DataFlow_Api_HostAddress = http://localhost:5099
+
+
+### CENÃRIO 1 - TELA 2 - SUCESSO
+
+POST {{DataFlow_Api_HostAddress}}/api/importacoes/validar
+Content-Type: multipart/form-data; boundary=tela2sucesso
+
+--tela2sucesso
+Content-Disposition: form-data; name="arquivo"; filename="01_tela2_sucesso_10_registros.xlsx"
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+
+< ./ArquivosTestes/01_tela2_sucesso_10_registros.xlsx
+--tela2sucesso--
+
+
+### CENÃRIO 2 - TELA 2 - ERRO - MENOS DE 10 REGISTROS
+
+POST {{DataFlow_Api_HostAddress}}/api/importacoes/validar
+Content-Type: multipart/form-data; boundary=tela2erro
+
+--tela2erro
+Content-Disposition: form-data; name="arquivo"; filename="02_tela2_erro_menos_de_10_registros.xlsx"
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+
+< ./ArquivosTestes/02_tela2_erro_menos_de_10_registros.xlsx
+--tela2erro--
+
+
+### CENÃRIO 3 - TELA 3 - SUCESSO - 50 REGISTROS VÃLIDOS
+
+POST {{DataFlow_Api_HostAddress}}/api/importacoes/validar
+Content-Type: multipart/form-data; boundary=tela3sucesso
+
+--tela3sucesso
+Content-Disposition: form-data; name="arquivo"; filename="03_tela3_sucesso_50_registros_validos.xlsx"
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+
+< ./ArquivosTestes/03_tela3_sucesso_50_registros_validos.xlsx
+--tela3sucesso--
+
+
+### CENÃRIO 4 - TELA 3 - REGISTROS INVÃLIDOS
+
+POST {{DataFlow_Api_HostAddress}}/api/importacoes/validar
+Content-Type: multipart/form-data; boundary=tela3erro
+
+--tela3erro
+Content-Disposition: form-data; name="arquivo"; filename="04_tela3_erro_registros_invalidos.xlsx"
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+
+< ./ArquivosTestes/04_tela3_erro_registros_invalidos.xlsx
+--tela3erro--
